@@ -1,37 +1,42 @@
 import Link from "next/link";
 
+import styles from "../styles/WorkExperience.module.css";
+
 const workExperience = () => {
   return (
-    <div>
-      <h1>Work Exp</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Work Exp</h1>
       <img
         src="https://res.cloudinary.com/dnrbgmcm4/image/upload/v1611830623/Personal/Github%20ReadMe/IMG_20191011_150627_zlr0wa.jpg"
         alt="Me at Google"
-        style={{ width: "80vw" }}
+        className={styles.img}
       />
-      <section>
-        <h2>Front-End React Developer & UI/UX Intern @ Novo Technologies</h2>
-        <p>November 2019 - April, 2020</p>
-        <ul>
-          <li>
+      <section className={styles.section}>
+        <h2 className={styles.h2}>
+          Front-End React Developer & UI/UX Intern{" "}
+          <span className="orange">@ Novo Technologies</span>
+        </h2>
+        <p className={styles.date}>November 2019 - April, 2020</p>
+        <ul className={styles.ul}>
+          <li className={styles.li}>
             Improving scalability of a production application tremendously by
             incorporating the React Front-End library and other modern web
             technologies.
           </li>
-          <li>
+          <li className={styles.li}>
             Improving my team’s productivity by drafting user stories,
             flowcharts, personas, tasks, and sprint backlogs for scrum sprints.
           </li>
         </ul>
       </section>
-      <section>
-        <h2>
-          Google Developer Group Organizer & Mentor @ Google Developer Group
-          Cloud Turlock
+      <section className={styles.section}>
+        <h2 className={styles.h2}>
+          Google Developer Group Organizer & Mentor
+          <span className="orange">@ Google Developer Group Cloud Turlock</span>
         </h2>
-        <p>August 2018 - February, 2021</p>
-        <ul>
-          <li>
+        <p className={styles.date}>August 2018 - February, 2021</p>
+        <ul className={styles.ul}>
+          <li className={styles.li}>
             Conducting technical workshops where students learn popular computer
             science topics and technologies.
           </li>
@@ -42,14 +47,16 @@ const workExperience = () => {
           </li>
         </ul>
       </section>
-      <section>
-        <h2>
-          Undergrad Chatbot Research @ California State University Stanislaus
-          Kinesiology Department
+      <section className={styles.section}>
+        <h2 className={styles.h2}>
+          Undergrad Chatbot Research{" "}
+          <span className="orange">
+            @ California State University Stanislaus Kinesiology Department{" "}
+          </span>
         </h2>
-        <p>August 2019 - December, 2019</p>
-        <ul>
-          <li>
+        <p className={styles.date}>August 2019 - December, 2019</p>
+        <ul className={styles.ul}>
+          <li className={styles.li}>
             Created a chatbot with Amazon Lex, HTML, CSS, and JavaScript in
             order to help students taking kinesiology courses have success in
             their classes.
@@ -66,7 +73,7 @@ const workExperience = () => {
           </li>
         </ul>
       </section>
-      <button>
+      <button className={styles.button}>
         <Link href="/work">
           <a>Things I've Built →</a>
         </Link>

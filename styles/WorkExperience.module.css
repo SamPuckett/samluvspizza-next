@@ -28,19 +28,39 @@
   padding: 20px;
 }
 
-.ul {
-  margin: 15px 0 35px 0;
-  padding: 0 20px;
-  align-self: flex-end;
+.section {
+  font-size: 1em;
+  font-family: Hatch;
+  line-height: 1.3em;
+  padding: 18px 20px;
+  margin: 18px 0;
+  background-color: var(--black);
+  border-radius: 3px;
 }
 
-.li {
-  list-style: none;
-  text-align: right;
+.section .h2 {
   font-family: Hatch;
-  font-size: 20px;
-  line-height: 21px;
-  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.section .date {
+  font-size: 0.875em;
+  color: var(--grey);
+}
+
+.section .ul {
+  font-size: 0.75em;
+  line-height: 1em;
+  padding-left: 20px;
+}
+
+.section .li {
+  margin: 0.3em;
+}
+
+.button {
+  margin-top: 18px;
 }
 
 /* Small Tablet Styles */

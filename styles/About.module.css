@@ -15,7 +15,7 @@
   font-family: PowerLift;
   font-size: 67.5px;
   line-height: 60px;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   z-index: 10;
 }
@@ -28,19 +28,15 @@
   padding: 20px;
 }
 
-.ul {
-  margin: 15px 0 35px 0;
+.text {
+  font-size: 1em;
+  font-family: Hatch;
+  line-height: 1.3em;
   padding: 0 20px;
-  align-self: flex-end;
 }
 
-.li {
-  list-style: none;
-  text-align: right;
-  font-family: Hatch;
-  font-size: 20px;
-  line-height: 21px;
-  text-transform: uppercase;
+.button {
+  margin-top: 20px;
 }
 
 /* Small Tablet Styles */

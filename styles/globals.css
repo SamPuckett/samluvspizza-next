@@ -10,6 +10,10 @@
   --black: #1f1f1f;
 }
 
+.orange {
+  color: var(--orange);
+}
+
 html,
 body {
   padding: 0;
@@ -37,9 +41,24 @@ a {
 }
 
 button {
+  font-family: Hatch;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  border-radius: 3px;
+  background-color: var(--orange);
+  padding: 20px;
+  align-self: flex-end;
+  margin-bottom: 19px;
   border: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 30px 0 30px;
 }

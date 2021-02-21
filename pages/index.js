@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -29,4 +29,6 @@ export default function Home() {
       </button>
     </div>
   );
-}
+};
+
+export default Home;

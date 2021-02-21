@@ -13,11 +13,12 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <ul className={styles.ul}>
+        {/*
         <li className={styles.li}>
           <Link href="/">
             <FontAwesomeIcon icon={faHome} className={styles.icon} />
           </Link>
-        </li>
+        </li>*/}
         <li className={styles.li}>
           <Link href="https://www.linkedin.com/in/samuelgruiz/">
             <FontAwesomeIcon icon={faLinkedinIn} className={styles.icon} />
