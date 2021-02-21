@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: transparent;
+  padding: 36px 30px;
+}
+
+.icon {
+  width: 30px;
+  color: var(--white);
+}

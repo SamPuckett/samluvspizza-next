@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/hdq5sdv.css");
+
+:root {
+  --darkest-purple: #252430;
+  --dark-purple: #393854;
+  --orange: #db5817;
+  --white: #faf9fa;
+  --dark-grey: #707070;
+  --grey: #9ba8b4;
+  --black: #1f1f1f;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+  background-color: var(--darkest-purple);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
