@@ -1,0 +1,84 @@
+/* Variables */
+
+/* Base Styles */
+
+/* Fonts */
+
+/* Mobile Styles */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 30px 0 30px;
+}
+
+.title {
+  font-family: PowerLift;
+  font-size: 67.5px;
+  line-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.section {
+  background-color: var(--black);
+  border-radius: 3px;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.projectTitle {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Hatch;
+  margin: 0 20px;
+}
+
+.img {
+  align-self: center;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+}
+
+.p {
+  margin: 0 20px;
+  font-size: 0.875em;
+  font-weight: lighter;
+  color: var(--grey);
+}
+
+.ul {
+  margin: 15px 0 18px 0;
+  padding: 0 20px;
+  align-self: flex-end;
+}
+
+.li {
+  text-align: left;
+  margin: 0 20px;
+  font-family: Hatch;
+  font-size: 0.75em;
+  line-height: 16px;
+}
+
+/* Small Tablet Styles */
+@media screen and(min-width: 620px) {
+  .container {
+    border: 1px solid red;
+  }
+}
+
+/* Large Tablets & Laptop Styles */
+@media screen and(min-width: 960px) {
+  .container {
+    border: 1px solid blue;
+  }
+}
+
+/* Desktop Styles */
+@media screen and(min-width: 1200px) {
+  .container {
+    border: 1px solid orange;
+  }
+}

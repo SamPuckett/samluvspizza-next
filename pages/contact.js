@@ -1,7 +1,6 @@
 import Link from "next/link";
 
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import styles from "../styles/Contact.module.css";
 
 const contact = () => {
   const contactButtonHandler = () => {
@@ -9,16 +8,18 @@ const contact = () => {
   };
 
   return (
-    <div>
-      <h1>Get In Touch</h1>
-      <section>
-        <h2>Contact Me!</h2>
-        <p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Get In Touch</h1>
+      <section className={styles.section}>
+        <h2 className={styles.projectTitle}>Contact Me!</h2>
+        <p className={styles.text}>
           I’m currently looking for new Developer opportunities, my inbox is
           always open. Whether you have a question or just want to say hi, I’ll
           try my best to get back to you!
         </p>
-        <button onClick={contactButtonHandler}>Get In Touch →</button>
+        <button className={styles.button} onClick={contactButtonHandler}>
+          Get In Touch →
+        </button>
       </section>
     </div>
   );

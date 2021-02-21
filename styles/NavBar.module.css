@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   background-color: transparent;
   padding: 36px 30px;
@@ -9,4 +9,5 @@
 .icon {
   width: 30px;
   color: var(--white);
+  opacity: 0.5;
 }
