@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100vw - 60px);
   background-color: transparent;
   padding: 36px 30px;
 }

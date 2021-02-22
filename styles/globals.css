@@ -44,18 +44,26 @@ a {
 
 button {
   font-family: Hatch;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: bold;
-  color: var(--white);
-  border-radius: 3px;
+  color: var(--black);
+  border-radius: 5px;
   background-color: var(--orange);
   padding: 20px;
   align-self: flex-end;
   margin-bottom: 19px;
   border: none;
+  text-shadow: 2px 2px 0 var(--white);
+  transition: 100ms ease;
 }
 
-* {
+button:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px var(--black);
+  transform: scale(1.01);
+}
+
+but * {
   box-sizing: border-box;
 }
 
