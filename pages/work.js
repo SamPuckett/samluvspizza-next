@@ -55,7 +55,7 @@ const work = () => {
           </li>
         </ul>
       </section>
-      <button>
+      <button className={styles.button}>
         <Link href="/contact">
           <a>What's Next →</a>
         </Link>

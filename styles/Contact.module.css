@@ -18,6 +18,7 @@
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
+  margin-bottom: 18px;
 }
 
 .section {
@@ -25,8 +26,8 @@
   flex-flow: column nowrap;
   background-color: var(--black);
   border-radius: 3px;
-  padding: 16px 0;
-  margin: 16px 0;
+  padding: 18px 0;
+  margin: 18px 0;
 }
 
 .projectTitle {
@@ -38,13 +39,13 @@
 
 .text {
   font-size: 0.75em;
-  margin: 8px 20px;
+  margin: 9px 20px;
   font-family: Hatch;
   line-height: 16px;
 }
 
 .button {
-  margin: 16px 20px 0 20px;
+  margin: 16px 20px 9px 20px;
   align-self: center;
 }
 
