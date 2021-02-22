@@ -6,6 +6,17 @@
   padding: 36px 30px;
 }
 
+.memoji {
+  cursor: pointer;
+  width: 70px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.memoji:hover {
+  background-color: var(--white);
+}
+
 .icon {
   width: 30px;
   color: var(--white);

@@ -23,6 +23,8 @@ body {
   overflow-x: hidden;
   background-color: var(--darkest-purple);
   color: var(--white);
+  background-image: url("/texture.png");
+  background-size: cover;
 }
 
 h1,

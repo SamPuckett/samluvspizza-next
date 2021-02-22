@@ -12,7 +12,7 @@ const Home = () => {
       </Head>
       <h1 className={styles.title}>Samuel Ruiz</h1>
       <img
-        src="https://res.cloudinary.com/dnrbgmcm4/image/upload/v1611830623/Personal/Github%20ReadMe/IMG_20191011_150627_zlr0wa.jpg"
+        src="/GoogleHispanicSummit-cropped2.png"
         alt="Me at Google"
         className={styles.img}
       />

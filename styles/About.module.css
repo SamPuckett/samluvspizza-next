@@ -18,12 +18,18 @@
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
+  text-shadow: 5px 5px 0px var(--orange);
+  transition: 500ms ease;
+}
+
+.title:hover {
+  text-shadow: 8px 8px 0px var(--orange);
 }
 
 .img {
   margin-top: -60px;
   align-self: center;
-  border-radius: 3px;
+  border-radius: 25px;
   width: 100%;
   padding: 20px;
 }

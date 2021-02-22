@@ -7,8 +7,8 @@ const workExperience = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Work Exp</h1>
       <img
-        src="https://res.cloudinary.com/dnrbgmcm4/image/upload/v1611830623/Personal/Github%20ReadMe/IMG_20191011_150627_zlr0wa.jpg"
-        alt="Me at Google"
+        src="/Novo.png"
+        alt="Me at Novo Technologies giving a presenation."
         className={styles.img}
       />
       <section className={styles.section}>
@@ -49,7 +49,7 @@ const workExperience = () => {
       </section>
       <section className={styles.section}>
         <h2 className={styles.h2}>
-          Undergrad Chatbot Research{" "}
+          Undergrad Chatbot Research
           <span className="orange">
             @ California State University Stanislaus Kinesiology Department{" "}
           </span>

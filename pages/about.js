@@ -7,7 +7,7 @@ const about = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>About Me</h1>
       <img
-        src="https://res.cloudinary.com/dnrbgmcm4/image/upload/v1611830623/Personal/Github%20ReadMe/IMG_20191011_150627_zlr0wa.jpg"
+        src="/HackMerced-cropped1.png"
         alt="Me at Google"
         className={styles.img}
       />

@@ -5,6 +5,7 @@ import styles from "../styles/Contact.module.css";
 const contact = () => {
   const contactButtonHandler = () => {
     console.log("button was clicked!");
+    window.open("mailto:samuelruizdev@gmail.com");
   };
 
   return (
