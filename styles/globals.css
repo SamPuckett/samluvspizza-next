@@ -49,12 +49,14 @@ button {
   color: var(--black);
   border-radius: 5px;
   background-color: var(--orange);
+  background-image: url("/texture.png");
+  background-size: auto;
   padding: 20px;
   align-self: flex-end;
   margin-bottom: 19px;
   border: none;
   text-shadow: 2px 2px 0 var(--white);
-  transition: 100ms ease;
+  transition: 500ms ease;
 }
 
 button:hover {

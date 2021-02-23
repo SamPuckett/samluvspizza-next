@@ -27,8 +27,8 @@
 }
 
 .img {
-  margin-top: -30px;
-  margin-bottom: 18px;
+  margin-top: -40px;
+  margin-bottom: 10px;
   align-self: center;
   border-radius: 5px;
   width: 100%;
@@ -38,10 +38,17 @@
   font-size: 1em;
   font-family: Hatch;
   line-height: 1.3em;
-  padding: 18px 20px;
-  margin: 18px 0;
+  padding: 20px;
+  margin: 10px 0;
   background-color: var(--black);
+  background-image: url("/texture.png");
+  background-size: cover;
   border-radius: 5px;
+  transition: 500ms ease;
+}
+
+.section:hover {
+  box-shadow: 0 5px 15px var(--black);
 }
 
 .section .h2 {
@@ -51,22 +58,29 @@
 }
 
 .section .date {
-  font-size: 0.875em;
+  font-size: 1em;
   color: var(--grey);
 }
 
 .section .ul {
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: 1em;
   padding-left: 20px;
+  margin-bottom: 0;
 }
 
 .section .li {
-  margin: 0.3em;
+  margin: 1em 0;
+  font-weight: lighter;
+  line-height: 1.25em;
+}
+
+.section .li:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .button {
-  margin-top: 18px;
+  margin: 10px 0;
 }
 
 /* Small Tablet Styles */
