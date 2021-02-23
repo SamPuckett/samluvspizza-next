@@ -20,6 +20,7 @@
   z-index: 10;
   text-shadow: 5px 5px 0px var(--orange);
   transition: 500ms ease;
+  margin-bottom: 20px;
 }
 
 .title:hover {
@@ -35,7 +36,7 @@
 }
 
 .text {
-  margin: 10px 0;
+  margin: 20px 0 10px 0;
   font-size: 1em;
   font-family: Hatch;
   line-height: 1.3em;

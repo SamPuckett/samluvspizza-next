@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../styles/WorkExperience.module.css";
 
@@ -6,10 +7,12 @@ const workExperience = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Work Exp</h1>
-      <img
+      <Image
         src="/Novo.png"
         alt="Me at Novo Technologies giving a presenation."
         className={styles.img}
+        width={853}
+        height={853}
       />
       <section className={styles.section}>
         <h2 className={styles.h2}>
@@ -40,7 +43,7 @@ const workExperience = () => {
             Conducting technical workshops where students learn popular computer
             science topics and technologies.
           </li>
-          <li>
+          <li className={styles.li}>
             Increasing the overall number of members within the Developer Group
             by building a welcoming community of Computer Science Students and
             organizing team building events.
@@ -61,11 +64,11 @@ const workExperience = () => {
             order to help students taking kinesiology courses have success in
             their classes.
           </li>
-          <li>
+          <li className={styles.li}>
             Decreased the number of questions the professor was asked via email
             in half.
           </li>
-          <li>
+          <li className={styles.li}>
             Worked with professor to survey previous classes and asked what were
             their most frequent questions in the courses and what they struggled
             with the most in order to implement the chatbot to cover all of
@@ -73,11 +76,9 @@ const workExperience = () => {
           </li>
         </ul>
       </section>
-      <button className={styles.button}>
-        <Link href="/work">
-          <a>Things I've Built →</a>
-        </Link>
-      </button>
+      <Link href="/work" className={styles.button}>
+        <button>Things I've Built →</button>
+      </Link>
     </div>
   );
 };

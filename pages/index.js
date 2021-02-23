@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
@@ -11,10 +12,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className={styles.title}>Samuel Ruiz</h1>
-      <img
+      <Image
         src="/GoogleHispanicSummit-cropped2.png"
         alt="Me at Google"
         className={styles.img}
+        width={287}
+        height={287}
+        layout="responsive"
       />
       <ul className={styles.ul}>
         <li className={styles.li}>Fontend Web Dev,</li>
@@ -22,11 +26,9 @@ const Home = () => {
         <li className={styles.li}>Graphic Designer,</li>
         <li className={styles.li}>Lover of Pizza,</li>
       </ul>
-      <button className={styles.button}>
-        <Link href="/about">
-          <a>About Me →</a>
-        </Link>
-      </button>
+      <Link href="/about" className={styles.button}>
+        <button>About Me →</button>
+      </Link>
     </div>
   );
 };

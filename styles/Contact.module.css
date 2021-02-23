@@ -8,7 +8,7 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0 30px 0 30px;
+  margin: 0 20px;
   height: 80vh;
   min-height: 80vh;
 }
@@ -30,7 +30,7 @@
   background-image: url("/texture.png");
   background-size: cover;
   border-radius: 5px;
-  padding: 20px 0;
+  padding: 20px;
   margin: 10px 0;
   transition: 500ms ease;
 }
@@ -43,14 +43,15 @@
   font-size: 1em;
   font-weight: bold;
   font-family: Hatch;
-  margin: 10px 20px;
+  margin: 0 0 10px 0;
 }
 
 .text {
-  font-size: 0.75em;
-  margin: 10px 20px;
+  font-size: 1em;
+  margin: 10px 0;
   font-family: Hatch;
-  line-height: 16px;
+  font-weight: lighter;
+  line-height: 1.25em;
 }
 
 .button {

@@ -46,16 +46,15 @@ button {
   font-family: Hatch;
   font-size: 1em;
   font-weight: bold;
-  color: var(--black);
+  color: var(--white);
   border-radius: 5px;
   background-color: var(--orange);
   background-image: url("/texture.png");
   background-size: auto;
   padding: 20px;
   align-self: flex-end;
-  margin-bottom: 19px;
+  margin: 10px 0;
   border: none;
-  text-shadow: 2px 2px 0 var(--white);
   transition: 500ms ease;
 }
 
@@ -65,7 +64,16 @@ button:hover {
   transform: scale(1.01);
 }
 
-but * {
+.img {
+  margin-top: -30px;
+  margin-bottom: 10px;
+  align-self: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+* {
   box-sizing: border-box;
 }
 
