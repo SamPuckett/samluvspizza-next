@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../styles/About.module.css";
 
@@ -6,10 +7,13 @@ const about = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>About Me</h1>
-      <img
+      <Image
         src="/HackMerced-cropped1.png"
         alt="Me at Google"
         className={styles.img}
+        width={554}
+        height={554}
+        layout="responsive"
       />
       <p className={styles.text}>
         Hello! I’m Sam, a Front-End Developer based in Modesto, California who
@@ -25,11 +29,9 @@ const about = () => {
         JavaScript, React and a variety of modern web technologies on a daily
         basis.
       </p>
-      <button className={styles.button}>
-        <Link href="/work-experience">
-          <a>Work Experience →</a>
-        </Link>
-      </button>
+      <Link href="/work-experience" className={styles.button}>
+        <button>Work Experience →</button>
+      </Link>
     </div>
   );
 };

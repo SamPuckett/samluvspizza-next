@@ -18,9 +18,11 @@ const contact = () => {
           always open. Whether you have a question or just want to say hi, I’ll
           try my best to get back to you!
         </p>
-        <button className={styles.button} onClick={contactButtonHandler}>
-          Get In Touch →
-        </button>
+        <Link href="/contact">
+          <button className={styles.button} onClick={contactButtonHandler}>
+            Get In Touch →
+          </button>
+        </Link>
       </section>
     </div>
   );

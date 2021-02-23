@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../styles/Work.module.css";
 
@@ -10,10 +11,12 @@ const work = () => {
         <a>
           <section className={styles.section}>
             <h2 className={styles.projectTitle}>Mega Video Game Quiz</h2>
-            <img
+            <Image
               src="/MVGQ.png"
               alt="Mega Video Game Quiz"
               className={styles.img}
+              width={3000}
+              height={3000}
             />
             <p className={styles.p}>Featured Project</p>
             <ul className={styles.ul}>
@@ -31,7 +34,13 @@ const work = () => {
         <a>
           <section className={styles.section}>
             <h2 className={styles.projectTitle}>Travelo</h2>
-            <img src="/travelo.png" alt="Me at Google" className={styles.img} />
+            <Image
+              src="/travelo.png"
+              alt="Me at Google"
+              className={styles.img}
+              width={3840}
+              height={2160}
+            />
             <p className={styles.p}>Full Stack MERN Web Application</p>
             <ul className={styles.ul}>
               <li className={styles.li}>
@@ -48,10 +57,12 @@ const work = () => {
         <a>
           <section className={styles.section}>
             <h2 className={styles.projectTitle}>50 Projects in 50 Days</h2>
-            <img
+            <Image
               src="/github-finder.png"
               alt="Me at Google"
               className={styles.img}
+              width={3840}
+              height={2160}
             />
             <p className={styles.p}>React, JavaScript, HTML, CSS</p>
             <ul className={styles.ul}>
@@ -64,11 +75,9 @@ const work = () => {
           </section>
         </a>
       </Link>
-      <button className={styles.button}>
-        <Link href="/contact">
-          <a>What's Next →</a>
-        </Link>
-      </button>
+      <Link href="/contact">
+        <button className={styles.button}>What's Next →</button>
+      </Link>
     </div>
   );
 };
