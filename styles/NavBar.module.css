@@ -1,9 +1,10 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: calc(100vw - 60px);
   background-color: transparent;
-  padding: 36px 30px;
+  padding: 20px 30px;
 }
 
 .memoji {

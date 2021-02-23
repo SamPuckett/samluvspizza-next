@@ -18,42 +18,56 @@
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 0px var(--orange);
+  transition: 500ms ease;
+}
+
+.title:hover {
+  text-shadow: 8px 8px 0px var(--orange);
 }
 
 .section {
   display: flex;
   flex-flow: column nowrap;
   background-color: var(--black);
+  background-image: url("/texture.png");
+  background-size: cover;
   border-radius: 5px;
-  padding: 18px 0;
-  margin: 18px 0;
+  padding: 20px 0;
+  margin: 10px 0;
+  transition: 500ms ease;
+}
+
+.section:hover {
+  box-shadow: 0 5px 15px var(--black);
 }
 
 .projectTitle {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
   font-family: Hatch;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .img {
   align-self: center;
   border-radius: 5px;
   width: 80%;
-  margin: 18px;
+  margin: 10px;
 }
 
 .p {
-  margin: 0 20px;
+  margin: 0 30px;
   font-size: 0.875em;
   font-weight: lighter;
   color: var(--grey);
 }
 
 .ul {
-  margin: 15px 0 18px 0;
-  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0 30px;
   align-self: flex-end;
 }
 
@@ -61,12 +75,12 @@
   text-align: left;
   margin: 0 20px;
   font-family: Hatch;
-  font-size: 0.75em;
-  line-height: 16px;
+  font-size: 1em;
+  /* line-height: 16px; */
 }
 
 .button {
-  margin-top: 18px;
+  margin: 10px 0;
 }
 
 /* Small Tablet Styles */
