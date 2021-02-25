@@ -9,8 +9,6 @@
   display: flex;
   flex-flow: column nowrap;
   margin: 0 20px;
-  height: 80vh;
-  min-height: 80vh;
 }
 
 .container__title {
@@ -46,23 +44,59 @@
 }
 
 .card__title {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
   font-family: Hatch;
   margin: 0 0 10px 0;
 }
 
-.card__text {
-  font-size: 1em;
-  margin: 10px 0;
+.card__image {
+  align-self: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px;
+}
+
+.card__iconContainer {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.card__iconContainer__icon {
+  margin-left: 1.25em;
+  font-size: 1.25em;
+}
+
+.card__iconContainer__icon:hover {
+  color: var(--orange);
+}
+
+.card__subTitle {
+  font-size: 0.875em;
+  font-weight: lighter;
+  color: var(--grey);
+  margin: 15px 0;
+}
+
+.card__descriptionContainer {
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.card__descriptionContainer__description {
+  text-align: left;
+  margin: 0 20px;
   font-family: Hatch;
   font-weight: lighter;
+  font-size: 1em;
   line-height: 1.25em;
 }
 
-.card__button {
-  margin: 10px 20px 0 20px;
-  align-self: center;
+.button {
+  margin: 10px 0;
 }
 
 /* Small Tablet Styles */

@@ -3,83 +3,84 @@ import Image from "next/image";
 
 import styles from "../styles/Work.module.css";
 
-const work = () => {
+const Work = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Things I've Built</h1>
-      <Link href="https://megavideogamequiz.xyz/">
-        <a>
-          <section className={styles.section}>
-            <h2 className={styles.projectTitle}>Mega Video Game Quiz</h2>
-            <Image
-              src="/MVGQ.png"
-              alt="Mega Video Game Quiz"
-              className={styles.img}
-              width={3000}
-              height={3000}
-            />
-            <p className={styles.p}>Featured Project</p>
-            <ul className={styles.ul}>
-              <li className={styles.li}>
-                I mocked-up, designed, & coded a web application in which users
-                test their knowledge of video game trivia in order to try and
-                reach the high score leaderboards. I used React, Adobe XD,
-                Firebase, Open Trivia API.
-              </li>
-            </ul>
-          </section>
-        </a>
-      </Link>
-      <Link href="https://react-mern-299603.web.app/">
-        <a>
-          <section className={styles.section}>
-            <h2 className={styles.projectTitle}>Travelo</h2>
-            <Image
-              src="/travelo.png"
-              alt="Me at Google"
-              className={styles.img}
-              width={3840}
-              height={2160}
-            />
-            <p className={styles.p}>Full Stack MERN Web Application</p>
-            <ul className={styles.ul}>
-              <li className={styles.li}>
-                I made a full stack MERN social media platform where users share
-                places that they recommend to travel to. I learned how to use
-                Heroku to host a backend & Firebase to host the frontend of the
-                project.
-              </li>
-            </ul>
-          </section>
-        </a>
-      </Link>
-      <Link href="https://50reactprojects50days.netlify.app/">
-        <a>
-          <section className={styles.section}>
-            <h2 className={styles.projectTitle}>50 Projects in 50 Days</h2>
-            <Image
-              src="/github-finder.png"
-              alt="Me at Google"
-              className={styles.img}
-              width={3840}
-              height={2160}
-            />
-            <p className={styles.p}>React, JavaScript, HTML, CSS</p>
-            <ul className={styles.ul}>
-              <li className={styles.li}>
-                I created 50 React projects in 50 days. I worked on this in
-                order to create many different components that I might need in
-                the future when creating things for front-end purposes.
-              </li>
-            </ul>
-          </section>
-        </a>
-      </Link>
-      <Link href="/contact">
-        <button className={styles.button}>What's Next →</button>
+      <h1 className={styles.title}>Work Exp</h1>
+      <Image
+        src="/Novo.png"
+        alt="Me at Novo Technologies giving a presenation."
+        className={styles.img}
+        width={853}
+        height={853}
+      />
+      <section className={styles.card}>
+        <h2 className={styles.card__title}>
+          Front-End React Developer & UI/UX Intern{" "}
+          <span className="orange">@ Novo Technologies</span>
+        </h2>
+        <p className={styles.card__date}>November 2019 - April, 2020</p>
+        <ul className={styles.card__descriptionContainer}>
+          <li className={styles.card__descriptionContainer__description}>
+            Improving scalability of a production application tremendously by
+            incorporating the React Front-End library and other modern web
+            technologies.
+          </li>
+          <li className={styles.card__descriptionContainer__description}>
+            Improving my team’s productivity by drafting user stories,
+            flowcharts, personas, tasks, and sprint backlogs for scrum sprints.
+          </li>
+        </ul>
+      </section>
+      <section className={styles.card}>
+        <h2 className={styles.card__title}>
+          Google Developer Group Organizer & Mentor
+          <span className="orange">@ Google Developer Group Cloud Turlock</span>
+        </h2>
+        <p className={styles.card__date}>August 2018 - February, 2021</p>
+        <ul className={styles.card__descriptionContainer}>
+          <li className={styles.card__descriptionContainer__description}>
+            Conducting technical workshops where students learn popular computer
+            science topics and technologies.
+          </li>
+          <li className={styles.card__descriptionContainer__description}>
+            Increasing the overall number of members within the Developer Group
+            by building a welcoming community of Computer Science Students and
+            organizing team building events.
+          </li>
+        </ul>
+      </section>
+      <section className={styles.card}>
+        <h2 className={styles.card__title}>
+          Undergrad Chatbot Research
+          <span className="orange">
+            @ California State University Stanislaus Kinesiology Department{" "}
+          </span>
+        </h2>
+        <p className={styles.card__date}>August 2019 - December, 2019</p>
+        <ul className={styles.card__descriptionContainer}>
+          <li className={styles.card__descriptionContainer__description}>
+            Created a chatbot with Amazon Lex, HTML, CSS, and JavaScript in
+            order to help students taking kinesiology courses have success in
+            their classes.
+          </li>
+          <li className={styles.card__descriptionContainer__description}>
+            Decreased the number of questions the professor was asked via email
+            in half.
+          </li>
+          <li className={styles.card__descriptionContainer__description}>
+            Worked with professor to survey previous classes and asked what were
+            their most frequent questions in the courses and what they struggled
+            with the most in order to implement the chatbot to cover all of
+            those questions.
+          </li>
+        </ul>
+      </section>
+      <Link href="/projects" className={styles.button}>
+        <button>Things I've Built →</button>
       </Link>
     </div>
   );
 };
 
-export default work;
+export default Work;
