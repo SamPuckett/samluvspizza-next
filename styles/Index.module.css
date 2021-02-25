@@ -16,11 +16,11 @@
   font-family: PowerLift;
   font-size: 67.5px;
   line-height: 60px;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   z-index: 10;
   text-shadow: 5px 5px 0px var(--orange);
-  transition: 500ms ease;
+  transition: text-shadow 500ms ease;
   margin-bottom: 20px;
 }
 
@@ -36,13 +36,13 @@
   border-radius: 5px;
 }
 
-.ul {
+.descriptionContainer {
   margin: 20px 0 10px 0;
   /* padding: 0 20px; */
   align-self: flex-end;
 }
 
-.li {
+.descriptionContainer__description {
   list-style: none;
   text-align: right;
   font-family: Hatch;

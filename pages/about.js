@@ -29,7 +29,7 @@ const about = () => {
         JavaScript, React and a variety of modern web technologies on a daily
         basis.
       </p>
-      <Link href="/work-experience" className={styles.button}>
+      <Link href="/work" className={styles.button}>
         <button>Work Experience →</button>
       </Link>
     </div>

@@ -1,26 +1,26 @@
-.container {
+.footer {
   color: var(--white);
   opacity: 0.5;
   font-size: 16px;
   font-weight: lighter;
 }
 
-.ul {
+.footer__itemContainer {
   display: flex;
   justify-content: space-around;
   padding: 0;
 }
 
-.li {
+.footer__itemContainer__singleItem {
   text-align: center;
   list-style-type: none;
 }
 
-.li:hover {
+.footer__itemContainer__singleItem:hover {
   cursor: pointer;
   color: var(--orange);
 }
 
-.icon {
+.footer__itemContainer__singleItem__icon {
   width: 1.5rem;
 }

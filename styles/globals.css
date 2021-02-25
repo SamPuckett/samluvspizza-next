@@ -55,7 +55,7 @@ button {
   align-self: flex-end;
   margin: 10px 0;
   border: none;
-  transition: 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease;
 }
 
 button:hover {

@@ -11,25 +11,19 @@ import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.container}>
-      <ul className={styles.ul}>
-        {/*
-        <li className={styles.li}>
-          <Link href="/">
-            <FontAwesomeIcon icon={faHome} className={styles.icon} />
-          </Link>
-        </li>*/}
-        <li className={styles.li}>
+    <footer className={styles.footer}>
+      <ul className={styles.footer__itemContainer}>
+        <li className={styles.footer__itemContainer__singleItem}>
           <Link href="https://www.linkedin.com/in/samuelgruiz/">
             <FontAwesomeIcon icon={faLinkedinIn} className={styles.icon} />
           </Link>
         </li>
-        <li className={styles.li}>
+        <li className={styles.footer__itemContainer__singleItem}>
           <Link href="https://github.com/sampuckett">
             <FontAwesomeIcon icon={faGithub} className={styles.icon} />
           </Link>
         </li>
-        <li className={styles.li}>
+        <li className={styles.footer__itemContainer__singleItem__icon}>
           <Link href="https://www.instagram.com/samluvspizza/">
             <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
           </Link>

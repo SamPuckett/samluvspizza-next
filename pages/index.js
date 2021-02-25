@@ -20,11 +20,19 @@ const Home = () => {
         height={287}
         layout="responsive"
       />
-      <ul className={styles.ul}>
-        <li className={styles.li}>Fontend Web Dev,</li>
-        <li className={styles.li}>Computer Science B.S.,</li>
-        <li className={styles.li}>Graphic Designer,</li>
-        <li className={styles.li}>Lover of Pizza,</li>
+      <ul className={styles.descriptionContainer}>
+        <li className={styles.descriptionContainer__description}>
+          Fontend Web Dev,
+        </li>
+        <li className={styles.descriptionContainer__description}>
+          Computer Science B.S.,
+        </li>
+        <li className={styles.descriptionContainer__description}>
+          Graphic Designer,
+        </li>
+        <li className={styles.descriptionContainer__description}>
+          Lover of Pizza,
+        </li>
       </ul>
       <Link href="/about" className={styles.button}>
         <button>About Me →</button>

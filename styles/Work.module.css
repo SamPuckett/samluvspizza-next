@@ -18,65 +18,68 @@
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
-  margin-bottom: 10px;
   text-shadow: 5px 5px 0px var(--orange);
-  transition: 500ms ease;
+  transition: text-shadow 500ms ease;
+  margin-bottom: 20px;
 }
 
 .title:hover {
   text-shadow: 8px 8px 0px var(--orange);
 }
 
-.section {
-  display: flex;
-  flex-flow: column nowrap;
+.img {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  align-self: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card {
+  font-size: 1em;
+  font-family: Hatch;
+  line-height: 1.3em;
+  padding: 20px;
+  margin: 20px 0 10px 0;
   background-color: var(--black);
   background-image: url("/texture.png");
   background-size: cover;
   border-radius: 5px;
-  padding: 20px;
-  margin: 10px 0;
-  transition: 500ms ease;
+  transition: box-shadow 500ms ease;
 }
 
-.section:hover {
+.card:hover {
   box-shadow: 0 5px 15px var(--black);
 }
 
-.projectTitle {
-  font-size: 1.25em;
-  font-weight: bold;
+.card__title {
   font-family: Hatch;
-  margin: 0 0 10px 0;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-.img {
-  align-self: center;
-  border-radius: 5px;
-  width: 80%;
-  margin: 10px;
-}
-
-.p {
-  font-size: 0.875em;
-  font-weight: lighter;
+.card__date {
+  font-size: 1em;
   color: var(--grey);
-  margin: 15px 0;
 }
 
-.ul {
+.card__descriptionContainer {
   margin: 0;
   padding: 0;
   align-self: flex-end;
 }
 
-.li {
+.card__descriptionContainer__description {
   text-align: left;
-  margin: 0 20px;
+  margin: 10px 20px;
   font-family: Hatch;
   font-weight: lighter;
   font-size: 1em;
   line-height: 1.25em;
+}
+
+.card__descriptionContainer__description:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .button {

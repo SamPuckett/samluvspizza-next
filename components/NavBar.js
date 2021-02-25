@@ -8,9 +8,13 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <img src="/MeMoji.png" className={styles.memoji} />
+        <img
+          src="/MeMoji.png"
+          className={styles.nav__memoji}
+          alt="me as a memoji"
+        />
       </Link>
-      <FontAwesomeIcon icon={faBars} className={styles.icon} />
+      <FontAwesomeIcon icon={faBars} className={styles.nav__hamburger} />
     </nav>
   );
 };

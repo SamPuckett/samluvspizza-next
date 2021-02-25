@@ -7,18 +7,18 @@
   padding: 20px 30px;
 }
 
-.memoji {
+.nav__memoji {
   cursor: pointer;
   width: 70px;
   background-color: var(--black);
   border-radius: 50%;
 }
 
-.memoji:hover {
+.nav__memoji:hover {
   background-color: var(--white);
 }
 
-.icon {
+.nav__hamburger {
   width: 30px;
   color: var(--white);
   opacity: 0.5;
