@@ -36,7 +36,10 @@ const Work = () => {
       <section className={styles.card}>
         <h2 className={styles.card__title}>
           Google Developer Group Organizer & Mentor
-          <span className="orange">@ Google Developer Group Cloud Turlock</span>
+          <span className="orange">
+            {" "}
+            @ Google Developer Group Cloud Turlock
+          </span>
         </h2>
         <p className={styles.card__date}>August 2018 - February, 2021</p>
         <ul className={styles.card__descriptionContainer}>
@@ -55,7 +58,8 @@ const Work = () => {
         <h2 className={styles.card__title}>
           Undergrad Chatbot Research
           <span className="orange">
-            @ California State University Stanislaus Kinesiology Department{" "}
+            {" "}
+            @ California State University Stanislaus
           </span>
         </h2>
         <p className={styles.card__date}>August 2019 - December, 2019</p>

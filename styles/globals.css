@@ -1,13 +1,21 @@
 @import url("https://use.typekit.net/hdq5sdv.css");
 
 :root {
+  /* Colors */
   --darkest-purple: #252430;
   --dark-purple: #393854;
   --orange: #db5817;
+  --dark-orange: rgba(219, 88, 23, 0.75);
   --white: #faf9fa;
   --dark-grey: #707070;
   --grey: #9ba8b4;
   --black: #1f1f1f;
+
+  /* Fonts */
+  --body-font-size: 18px;
+  --button-font-size: 16px;
+
+  --body-font-line-height: 24px;
 }
 
 .orange {
@@ -18,13 +26,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: adelle-sans, sans-serif;
   overflow-x: hidden;
   background-color: var(--darkest-purple);
   color: var(--white);
   background-image: url("/texture.png");
   background-size: cover;
+  letter-spacing: 0.2px;
 }
 
 h1,
@@ -43,15 +51,15 @@ a {
 }
 
 button {
-  font-family: Hatch;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: var(--button-font-size);
+  font-weight: 700;
   color: var(--white);
-  border-radius: 5px;
+  border-radius: 8px;
+  font-family: adelle-sans, sans-serif;
   background-color: var(--orange);
   background-image: url("/texture.png");
   background-size: auto;
-  padding: 20px;
+  padding: 14px 24px;
   align-self: flex-end;
   margin: 10px 0;
   border: none;

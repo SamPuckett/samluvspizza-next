@@ -12,19 +12,20 @@
 }
 
 .title {
-  font-family: PowerLift;
+  font-family: powerlift, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 67.5px;
   line-height: 60px;
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
-  text-shadow: 5px 5px 0px var(--orange);
   transition: text-shadow 500ms ease;
   margin-bottom: 20px;
 }
 
 .title:hover {
-  text-shadow: 8px 8px 0px var(--orange);
+  text-shadow: 5px 5px 0px var(--orange);
 }
 
 .img {
@@ -37,10 +38,10 @@
 
 .text {
   margin: 20px 0 10px 0;
-  font-size: 1em;
-  font-family: Hatch;
-  line-height: 1.3em;
-  /* padding: 0 20px; */
+  font-size: var(--body-font-size);
+  word-break: break-word;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
 }
 
 .button {

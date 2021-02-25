@@ -12,19 +12,20 @@
 }
 
 .container__title {
-  font-family: PowerLift;
+  font-family: powerlift, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 67.5px;
   line-height: 60px;
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
-  margin-bottom: 10px;
-  text-shadow: 5px 5px 0px var(--orange);
   transition: text-shadow 500ms ease;
+  margin-bottom: 20px;
 }
 
 .container__title:hover {
-  text-shadow: 8px 8px 0px var(--orange);
+  text-shadow: 5px 5px 0px var(--orange);
 }
 
 .card {
@@ -44,9 +45,8 @@
 }
 
 .card__title {
-  font-size: 1.25em;
+  font-size: 26px;
   font-weight: bold;
-  font-family: Hatch;
   margin: 0 0 10px 0;
 }
 
@@ -74,8 +74,7 @@
 }
 
 .card__subTitle {
-  font-size: 0.875em;
-  font-weight: lighter;
+  font-size: 1em;
   color: var(--grey);
   margin: 15px 0;
 }
@@ -89,10 +88,9 @@
 .card__descriptionContainer__description {
   text-align: left;
   margin: 0 20px;
-  font-family: Hatch;
-  font-weight: lighter;
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: var(--body-font-size);
+  word-break: break-word;
+  line-height: 1.5;
 }
 
 .button {
