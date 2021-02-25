@@ -1,10 +1,10 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, setIsMobileMenuOpen }) => {
   return (
     <>
-      <NavBar />
+      <NavBar setIsMobileMenuOpen={setIsMobileMenuOpen} />
       {children}
       <Footer />
     </>
