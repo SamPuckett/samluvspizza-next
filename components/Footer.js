@@ -15,17 +15,26 @@ const Footer = () => {
       <ul className={styles.footer__itemContainer}>
         <li className={styles.footer__itemContainer__singleItem}>
           <Link href="https://www.linkedin.com/in/samuelgruiz/">
-            <FontAwesomeIcon icon={faLinkedinIn} className={styles.icon} />
+            <FontAwesomeIcon
+              icon={faLinkedinIn}
+              className={styles.footer__itemContainer__singleItem__icon}
+            />
           </Link>
         </li>
         <li className={styles.footer__itemContainer__singleItem}>
           <Link href="https://github.com/sampuckett">
-            <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className={styles.footer__itemContainer__singleItem__icon}
+            />
           </Link>
         </li>
-        <li className={styles.footer__itemContainer__singleItem__icon}>
+        <li className={styles.footer__itemContainer__singleItem}>
           <Link href="https://www.instagram.com/samluvspizza/">
-            <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className={styles.footer__itemContainer__singleItem__icon}
+            />
           </Link>
         </li>
       </ul>

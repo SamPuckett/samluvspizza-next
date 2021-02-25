@@ -24,3 +24,24 @@
 .footer__itemContainer__singleItem__icon {
   width: 1.5rem;
 }
+
+/* Small Tablet Styles */
+@media (min-width: 620px) {
+  /* .container {
+    border: 5px solid red;
+  } */
+}
+
+/* Large Tablets & Laptop Styles */
+@media (min-width: 960px) {
+  /* .container {
+    border: 5px solid green;
+  } */
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  /* .container {
+    border: 5px solid blue;
+  } */
+}

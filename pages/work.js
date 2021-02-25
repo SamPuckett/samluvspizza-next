@@ -13,6 +13,7 @@ const Work = () => {
         className={styles.img}
         width={853}
         height={853}
+        layout="responsive"
       />
       <section className={styles.card}>
         <h2 className={styles.card__title}>

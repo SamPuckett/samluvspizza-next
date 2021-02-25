@@ -48,22 +48,22 @@
 }
 
 /* Small Tablet Styles */
-@media screen and(min-width: 620px) {
-  .container {
-    border: 1px solid red;
-  }
+@media (min-width: 620px) {
+  /* .container {
+    border: 5px solid red;
+  } */
 }
 
 /* Large Tablets & Laptop Styles */
-@media screen and(min-width: 960px) {
-  .container {
-    border: 1px solid blue;
-  }
+@media (min-width: 960px) {
+  /* .container {
+    border: 5px solid green;
+  } */
 }
 
 /* Desktop Styles */
-@media screen and(min-width: 1200px) {
-  .container {
-    border: 1px solid orange;
-  }
+@media (min-width: 1200px) {
+  /* .container {
+    border: 5px solid blue;
+  } */
 }
