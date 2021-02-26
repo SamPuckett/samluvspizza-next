@@ -48,16 +48,24 @@ const Projects = () => {
           </li>
         </ul>
         <div className={styles.card__iconContainer}>
-          <a href={projects.quiz.repo} target="_blank">
+          <a
+            href={projects.quiz.repo}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faCodeBranch}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
-          <a href={projects.quiz.liveSite} target="_blank">
+          <a
+            href={projects.quiz.liveSite}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
         </div>
@@ -82,16 +90,24 @@ const Projects = () => {
           </li>
         </ul>
         <div className={styles.card__iconContainer}>
-          <a href={projects.travelo.repo} target="_blank">
+          <a
+            href={projects.travelo.repo}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faCodeBranch}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
-          <a href={projects.travelo.liveSite} target="_blank">
+          <a
+            href={projects.travelo.liveSite}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
         </div>
@@ -116,16 +132,24 @@ const Projects = () => {
           </li>
         </ul>
         <div className={styles.card__iconContainer}>
-          <a href={projects.fiftyProjects.repo} target="_blank">
+          <a
+            href={projects.fiftyProjects.repo}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faCodeBranch}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
-          <a href={projects.fiftyProjects.liveSite} target="_blank">
+          <a
+            href={projects.fiftyProjects.liveSite}
+            className={styles.card__iconContainer__a}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
-              className={styles.card__iconContainer__icon}
+              className={styles.card__iconContainer__a__icon}
             />
           </a>
         </div>

@@ -56,8 +56,6 @@
 
   .nav__desktopLinkContainer__item {
     margin: 0 10px;
-    font-family: Hatch;
-    font-weight: lighter;
     text-transform: capitalize;
   }
 

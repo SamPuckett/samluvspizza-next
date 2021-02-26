@@ -6,7 +6,7 @@ import styles from "../styles/Work.module.css";
 const Work = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Work Exp</h1>
+      <h1 className={styles.title}>Work Experience</h1>
       <Image
         src="/Novo.png"
         alt="Me at Novo Technologies giving a presenation."
