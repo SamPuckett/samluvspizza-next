@@ -1,15 +1,19 @@
 # samluvspizza-next
  Refactoring My Portfolio Site to make use of Next.js
  
-## v1.04.1: Tweaked Fonts
+### v1.04.2: Improve SEO By including <meta> element in <Head>
+- Next.js offers a way to implement and inject a <head> element in the compiled HTML by using their own <Head> component imported from 'next/head'.
+- I used this component to inject a new <meta> element with the description of the webpage in the <Layout> component so that all of the pages that are compiled by Next will have that <meta> element.
+
+### v1.04.1: Tweaked Fonts
 - Changed fonts that were difficult to read and imrpove accessability.
  
-## v1.04: Mobile Menu Implemented + More!
+### v1.04: Mobile Menu Implemented + More!
 - Fixes Issue #26 by implementing the mobile menu
 - Fixes issue #25 by adding a meta description so that I can get the viewport and media queries working in css and improve lighthouse score.
 - Implemented Desktop & Large tablet nav bar that are hidden on mobile and also made sure that the mobile hamburger icon and mobile menu can never appear in desktop and large tablet screen sizes.
 
-## v1.03: Misc. Style Enhancements and Bug Fixes
+### v1.03: Misc. Style Enhancements and Bug Fixes
 - Fix Issue #20 and swapped all css selectors to follow the BEM naming convention.
 - Fix issue #18 by adding two icons from FontAwesome in order for users to be able to click on the links to visit the live project site and the github repo to see the code.
 - Fix issue #17 by adding making links open in a new tab so that users who are viewing my portfolio site don't leave the site and stay to look at more.
