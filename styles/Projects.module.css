@@ -12,9 +12,6 @@
 }
 
 .container__title {
-  font-family: powerlift, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 67.5px;
   line-height: 60px;
   text-align: left;
@@ -45,7 +42,7 @@
 }
 
 .card__title {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   margin: 0 0 10px 0;
 }
@@ -62,14 +59,25 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  align-content: center;
 }
 
-.card__iconContainer__icon {
+.card__iconContainer__a {
+  letter-spacing: normal !important;
+  color: var(--white) !important;
+  width: 18px;
   margin-left: 1.25em;
   font-size: 1.25em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: center;
 }
 
-.card__iconContainer__icon:hover {
+.card__iconContainer__a__icon {
+}
+
+.card__iconContainer__a__icon:hover {
   color: var(--orange);
 }
 

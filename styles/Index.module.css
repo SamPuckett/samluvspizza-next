@@ -13,8 +13,8 @@
 }
 
 .title {
-  font-family: powerlift, sans-serif;
-  font-weight: 400;
+  font-family: sofia-pro-condensed, sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 67.5px;
   line-height: 60px;
@@ -44,6 +44,9 @@
 }
 
 .descriptionContainer__description {
+  font-family: sofia-pro-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   list-style: none;
   text-align: right;
   font-size: 24px;
