@@ -1,17 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 
 import styles from "../styles/Index.module.css";
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Samuel Ruiz</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <h1 className={styles.title}>Samuel Ruiz</h1>
       <Image
         src="/GoogleHispanicSummit-cropped2.png"
