@@ -1,6 +1,9 @@
 # samluvspizza-next
  Refactoring My Portfolio Site to make use of Next.js
  
+## v1.04.1: Tweaked Fonts
+- Changed fonts that were difficult to read and imrpove accessability.
+ 
 ## v1.04: Mobile Menu Implemented + More!
 - Fixes Issue #26 by implementing the mobile menu
 - Fixes issue #25 by adding a meta description so that I can get the viewport and media queries working in css and improve lighthouse score.
