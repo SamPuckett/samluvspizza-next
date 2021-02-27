@@ -33,6 +33,7 @@
 
 .nav__desktopLinkContainer {
   display: none;
+  z-index: 10;
 }
 
 /* Small Tablet Styles */
