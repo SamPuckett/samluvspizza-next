@@ -31,12 +31,24 @@
   display: flex;
   flex-flow: column nowrap;
   background-color: var(--black);
-  background-image: url("/texture.png");
   background-size: cover;
   border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
   transition: box-shadow 500ms ease;
+}
+
+.card::before {
+  content: "";
+  background-image: url("/texture.webp");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  z-index: -10;
 }
 
 .card:hover {

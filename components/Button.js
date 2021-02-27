@@ -2,10 +2,10 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const Button = ({ children, href, type }) => {
+const Button = ({ children, href, onClick, type }) => {
   return (
     <Link href={href}>
-      <button>
+      <button onClick={onClick && onClick}>
         {children}
         {type === "arrow" && (
           <FontAwesomeIcon icon={faChevronRight} className="chevron-right" />

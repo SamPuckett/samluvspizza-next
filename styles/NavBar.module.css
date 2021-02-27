@@ -12,6 +12,7 @@
   width: 70px;
   background-color: var(--black);
   border-radius: 50%;
+  transition: background-color 500ms ease;
 }
 
 .nav__memoji:hover {
@@ -22,11 +23,12 @@
   height: 30px;
   width: 30px;
   color: var(--white);
-  opacity: 0.5;
+  z-index: 10;
 }
 
 .nav__hamburger:hover {
   cursor: pointer;
+  color: var(--orange);
 }
 
 .nav__desktopLinkContainer {

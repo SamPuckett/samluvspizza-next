@@ -24,12 +24,27 @@ body {
   margin: 0;
   font-family: adelle-sans, sans-serif;
   overflow-x: hidden;
-  background-color: var(--darkest-purple);
+  background: linear-gradient(
+    var(--darkest-purple),
+    var(--dark-purple),
+    var(--darkest-purple)
+  );
   color: var(--white);
-  background-image: url("/texture.png");
-  background-size: cover;
   letter-spacing: 0.2px;
   font-display: swap;
+}
+
+body::before {
+  content: "";
+  background-image: url("/texture.webp");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: 0;
 }
 
 h1,
@@ -65,8 +80,12 @@ button {
   color: var(--white);
   border-radius: 8px;
   font-family: adelle-sans, sans-serif;
-  background-color: var(--orange);
-  background-image: url("/texture.png");
+  background: linear-gradient(
+    var(--orange),
+    var(--dark-orange),
+    var(--dark-orange),
+    var(--dark-orange)
+  );
   background-size: auto;
   padding: 14px 24px;
   align-self: flex-end;
@@ -76,13 +95,17 @@ button {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 100ms ease, box-shadow 100ms ease, background 500ms ease,
+    color 250ms ease;
+  z-index: 10;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 5px 5px 5px var(--black);
-  transform: scale(1.01);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.33);
+  transform: scale(1.005);
+  background: linear-gradient(var(--white), var(--white), var(--grey));
+  color: var(--orange);
 }
 
 * {

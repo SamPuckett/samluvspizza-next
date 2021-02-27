@@ -8,7 +8,7 @@ const about = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>About Me</h1>
       <Image
-        src="/HackMerced-cropped1.png"
+        src="/HackMerced-cropped1.webp"
         alt="Me at Google"
         className={styles.img}
         width={554}

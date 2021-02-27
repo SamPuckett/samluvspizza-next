@@ -8,7 +8,7 @@ const Home = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Samuel Ruiz</h1>
       <Image
-        src="/GoogleHispanicSummit-cropped2.png"
+        src="/GoogleHispanicSummit-cropped1.webp"
         alt="Me at Google"
         className={styles.img}
         width={287}

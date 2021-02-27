@@ -8,7 +8,7 @@ const Work = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Work Experience</h1>
       <Image
-        src="/Novo.png"
+        src="/Novo.webp"
         alt="Me at Novo Technologies giving a presenation."
         className={styles.img}
         width={853}

@@ -36,7 +36,7 @@ const NavBar = ({ setIsMobileMenuOpen }) => {
     <nav className={styles.nav}>
       <Link href="/">
         <Image
-          src="/MeMoji.png"
+          src="/MeMoji.webp"
           className={styles.nav__memoji}
           alt="me as a memoji"
           width={70}
