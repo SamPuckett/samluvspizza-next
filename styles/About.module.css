@@ -26,8 +26,10 @@
 }
 
 .img {
-  border-radius: 5px;
   width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  clip-path: inset(0% 0% 0% 0% round 5%);
 }
 
 .text {
@@ -44,21 +46,61 @@
 
 /* Small Tablet Styles */
 @media (min-width: 620px) {
-  /* .container {
+  .container {
     border: 5px solid red;
-  } */
+    padding: 0 65px;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .title {
+    grid-area: 2 / 1 / 3 / 8;
+    align-self: center;
+    justify-self: start;
+    font-size: 3vw;
+  }
+
+  .text {
+    grid-area: 3 / 1 / 8 / 6;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .img {
+    grid-area: 3 / 7 / 8 / 11;
+    /* display: grid; */
+  }
+
+  .button {
+    grid-area: 8 / 1 / 9 / 6;
+    z-index: 100;
+    /* margin-top: 20px; */
+  }
 }
 
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
-  /* .container {
+  .container {
     border: 5px solid green;
-  } */
+  }
+
+  .text {
+    font-size: var(--body-font-size);
+  }
 }
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
+  .container {
     border: 5px solid blue;
-  } */
+  }
 }

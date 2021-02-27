@@ -64,13 +64,13 @@
 /* Small Tablet Styles */
 @media (min-width: 620px) {
   .container {
-    /* border: 5px solid red; */
+    border: 5px solid red;
     padding: 0 65px;
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
     grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
   }
 
   .title {
@@ -116,7 +116,7 @@
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
   .container {
-    /* border: 5px solid green; */
+    border: 5px solid green;
   }
 
   .descriptionContainer__description {
@@ -128,7 +128,7 @@
 @media (min-width: 1200px) {
   .container {
     padding: 0 130px;
-    /* border: 5px solid blue; */
+    border: 5px solid blue;
   }
 
   .descriptionContainer__description {
