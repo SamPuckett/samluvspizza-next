@@ -23,6 +23,7 @@
   text-align: center;
   list-style-type: none;
   padding: 0 25px;
+  transition: color 250ms ease;
 }
 
 .footer__itemContainer__singleItem:hover {
