@@ -1,19 +1,29 @@
 .footer {
   color: var(--white);
   opacity: 0.5;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: lighter;
+  margin-top: 20px;
+}
+
+.footer__text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .footer__itemContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
+  margin-bottom: 5px;
 }
 
 .footer__itemContainer__singleItem {
   text-align: center;
   list-style-type: none;
+  padding: 0 25px;
+  transition: color 250ms ease;
 }
 
 .footer__itemContainer__singleItem:hover {
@@ -22,26 +32,36 @@
 }
 
 .footer__itemContainer__singleItem__icon {
-  width: 1.5rem;
+  width: 14px;
 }
 
 /* Small Tablet Styles */
 @media (min-width: 620px) {
-  /* .container {
-    border: 5px solid red;
-  } */
+  .footer {
+    /* border: 5px solid red; */
+  }
 }
 
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
-  /* .container {
-    border: 5px solid green;
-  } */
+  .footer {
+    /* border: 5px solid green; */
+    font-size: 12px;
+  }
+
+  .footer__itemContainer__singleItem__icon {
+    width: 16px;
+  }
 }
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
-    border: 5px solid blue;
-  } */
+  .footer {
+    /* border: 5px solid blue; */
+    font-size: 14px;
+  }
+
+  .footer__itemContainer__singleItem__icon {
+    width: 18px;
+  }
 }

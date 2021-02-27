@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 
+import Button from "../components/Button";
 import styles from "../styles/Work.module.css";
 
 const Work = () => {
@@ -8,7 +8,7 @@ const Work = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Work Experience</h1>
       <Image
-        src="/Novo.png"
+        src="/Novo.webp"
         alt="Me at Novo Technologies giving a presenation."
         className={styles.img}
         width={853}
@@ -81,9 +81,9 @@ const Work = () => {
           </li>
         </ul>
       </section>
-      <Link href="/projects" className={styles.button}>
-        <button>Things I've Built →</button>
-      </Link>
+      <Button type="arrow" href="/projects" className={styles.button}>
+        Thing's I've Built
+      </Button>
     </div>
   );
 };

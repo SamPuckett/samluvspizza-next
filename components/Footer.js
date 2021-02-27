@@ -38,6 +38,7 @@ const Footer = () => {
           </Link>
         </li>
       </ul>
+      <p className={styles.footer__text}>Designed & Built by Samuel Ruiz</p>
     </footer>
   );
 };

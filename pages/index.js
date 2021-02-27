@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 
+import Button from "../components/Button";
 import styles from "../styles/Index.module.css";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Samuel Ruiz</h1>
       <Image
-        src="/GoogleHispanicSummit-cropped2.png"
+        src="/GoogleHispanicSummit-cropped1.webp"
         alt="Me at Google"
         className={styles.img}
         width={287}
@@ -29,9 +29,9 @@ const Home = () => {
           Lover of Pizza,
         </li>
       </ul>
-      <Link href="/about" className={styles.button}>
-        <button>About Me →</button>
-      </Link>
+      <Button type="arrow" href="/about" className={styles.button}>
+        About Me
+      </Button>
     </div>
   );
 };

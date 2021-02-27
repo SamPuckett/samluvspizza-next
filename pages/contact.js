@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import Button from "../components/Button";
 import styles from "../styles/Contact.module.css";
 
 const contact = () => {
@@ -18,14 +17,14 @@ const contact = () => {
           always open. Whether you have a question or just want to say hi, I’ll
           try my best to get back to you!
         </p>
-        <Link href="/contact">
-          <button
-            className={styles.card__button}
-            onClick={contactButtonHandler}
-          >
-            Get In Touch →
-          </button>
-        </Link>
+        <Button
+          type="arrow"
+          href="/contact"
+          className={styles.button}
+          onClick={contactButtonHandler}
+        >
+          Get In Touch
+        </Button>
       </section>
     </div>
   );

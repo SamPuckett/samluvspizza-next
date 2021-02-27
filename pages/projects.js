@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,6 +5,7 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Button from "../components/Button";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
@@ -31,7 +31,7 @@ const Projects = () => {
         <h2 className={styles.card__title}>Mega Video Game Quiz</h2>
         <a href={projects.quiz.liveSite} target="_blank">
           <Image
-            src="/MVGQ.png"
+            src="/MVGQ.webp"
             alt="Mega Video Game Quiz"
             className={styles.card__image}
             width={3000}
@@ -74,7 +74,7 @@ const Projects = () => {
         <h2 className={styles.card__title}>Travelo</h2>
         <a href={projects.travelo.liveSite} target="_blank">
           <Image
-            src="/travelo.png"
+            src="/travelo.webp"
             alt="Travelo.com homepage"
             className={styles.img}
             width={3840}
@@ -116,7 +116,7 @@ const Projects = () => {
         <h2 className={styles.card__title}>50 Projects in 50 Days</h2>
         <a href={projects.fiftyProjects.liveSite} target="_blank">
           <Image
-            src="/github-finder.png"
+            src="/github-finder.webp"
             alt="50 Projects in 50 Days"
             className={styles.img}
             width={3840}
@@ -154,9 +154,9 @@ const Projects = () => {
           </a>
         </div>
       </section>
-      <Link href="/contact">
-        <button className={styles.button}>What's Next →</button>
-      </Link>
+      <Button type="arrow" href="/contact" className={styles.button}>
+        What's Next
+      </Button>
     </div>
   );
 };

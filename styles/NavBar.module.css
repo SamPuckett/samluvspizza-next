@@ -12,6 +12,7 @@
   width: 70px;
   background-color: var(--black);
   border-radius: 50%;
+  transition: background-color 500ms ease;
 }
 
 .nav__memoji:hover {
@@ -22,15 +23,17 @@
   height: 30px;
   width: 30px;
   color: var(--white);
-  opacity: 0.5;
+  z-index: 10;
 }
 
 .nav__hamburger:hover {
   cursor: pointer;
+  color: var(--orange);
 }
 
 .nav__desktopLinkContainer {
   display: none;
+  z-index: 10;
 }
 
 /* Small Tablet Styles */
@@ -57,6 +60,7 @@
   .nav__desktopLinkContainer__item {
     margin: 0 10px;
     text-transform: capitalize;
+    transition: color 250ms ease;
   }
 
   .nav__desktopLinkContainer__item:hover {
@@ -72,7 +76,6 @@
 
   .nav__desktopLinkContainer__item {
     margin: 0 15px;
-    font-family: Hatch;
   }
 }
 
@@ -84,6 +87,5 @@
 
   .nav__desktopLinkContainer__item {
     margin: 0 20px;
-    font-family: Hatch;
   }
 }

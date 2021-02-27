@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,10 +35,13 @@ const NavBar = ({ setIsMobileMenuOpen }) => {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <img
-          src="/MeMoji.png"
+        <Image
+          src="/MeMoji.webp"
           className={styles.nav__memoji}
           alt="me as a memoji"
+          width={70}
+          height={70}
+          layout="intrinsic"
         />
       </Link>
       <FontAwesomeIcon
