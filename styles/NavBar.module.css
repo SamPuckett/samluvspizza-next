@@ -60,6 +60,7 @@
   .nav__desktopLinkContainer__item {
     margin: 0 10px;
     text-transform: capitalize;
+    transition: color 250ms ease;
   }
 
   .nav__desktopLinkContainer__item:hover {
