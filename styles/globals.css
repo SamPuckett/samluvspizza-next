@@ -97,7 +97,7 @@ button {
   align-items: center;
   transition: transform 100ms ease, box-shadow 100ms ease, background 500ms ease,
     color 250ms ease;
-  z-index: 10;
+  z-index: 100;
 }
 
 button:hover {

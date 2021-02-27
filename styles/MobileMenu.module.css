@@ -74,7 +74,7 @@
 /* Small Tablet Styles */
 @media (min-width: 620px) {
   .container {
-    border: 5px solid red;
+    display: none;
   }
   .container__menu__list {
     /* font-size: 2rem; */
