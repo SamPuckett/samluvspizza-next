@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,6 +5,7 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Button from "../components/Button";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
@@ -154,9 +154,9 @@ const Projects = () => {
           </a>
         </div>
       </section>
-      <Link href="/contact">
-        <button className={styles.button}>What's Next →</button>
-      </Link>
+      <Button type="arrow" href="/contact" className={styles.button}>
+        What's Next
+      </Button>
     </div>
   );
 };

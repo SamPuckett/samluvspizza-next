@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 
+import Button from "../components/Button";
 import styles from "../styles/About.module.css";
 
 const about = () => {
@@ -29,9 +29,9 @@ const about = () => {
         JavaScript, React and a variety of modern web technologies on a daily
         basis.
       </p>
-      <Link href="/work" className={styles.button}>
-        <button>Work Experience →</button>
-      </Link>
+      <Button type="arrow" href="/work" className={styles.button}>
+        Work Experience
+      </Button>
     </div>
   );
 };

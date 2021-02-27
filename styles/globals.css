@@ -18,10 +18,6 @@
   --body-font-line-height: 24px;
 }
 
-.orange {
-  color: var(--orange);
-}
-
 html,
 body {
   padding: 0;
@@ -75,6 +71,10 @@ button {
   align-self: flex-end;
   margin: 10px 0;
   border: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   transition: transform 500ms ease, box-shadow 500ms ease;
 }
 
@@ -82,6 +82,16 @@ button:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px var(--black);
   transform: scale(1.01);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.chevron-right {
+  font-size: 10px;
+  width: 10px;
+  margin-left: 6px;
 }
 
 .img {
@@ -93,14 +103,14 @@ button:hover {
   border: 1px solid red;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
   flex-flow: column nowrap;
   margin: 0 30px 0 30px;
+}
+
+.orange {
+  color: var(--orange);
 }
 
 /* Small Tablet Styles */
