@@ -15,6 +15,7 @@ const about = () => {
           width={554}
           height={554}
           layout="responsive"
+          priority="true"
         />
       </span>
       <p className={styles.text}>

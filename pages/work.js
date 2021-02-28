@@ -7,14 +7,16 @@ const Work = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Work Experience</h1>
-      <Image
-        src="/Novo.webp"
-        alt="Me at Novo Technologies giving a presenation."
-        className={styles.img}
-        width={853}
-        height={853}
-        layout="responsive"
-      />
+      {/* <span className={styles.img}>
+        <Image
+          src="/Novo.webp"
+          alt="Me at Novo Technologies giving a presenation."
+          width={500}
+          height={500}
+          layout="intrinsic"
+          priority="true"
+        />
+      </span> */}
       <section className={styles.card}>
         <h2 className={styles.card__title}>
           Front-End React Developer & UI/UX Intern{" "}
@@ -82,7 +84,7 @@ const Work = () => {
         </ul>
       </section>
       <Button type="arrow" href="/projects" className={styles.button}>
-        Thing's I've Built
+        Things I've Built
       </Button>
     </div>
   );

@@ -8,32 +8,30 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   margin: 0 20px;
 }
 
 .container__title {
-  font-size: 67.5px;
-  line-height: 60px;
-  text-align: left;
-  text-transform: uppercase;
-  z-index: 10;
-  transition: text-shadow 500ms ease;
-  margin-bottom: 20px;
+  justify-self: flex-start;
+  align-self: start;
 }
 
 .container__title:hover {
-  text-shadow: 5px 5px 0px var(--orange);
 }
 
 .card {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
   background-color: var(--black);
   background-size: cover;
   border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
   transition: box-shadow 500ms ease;
+  max-width: 800px;
 }
 
 .card::before {
@@ -54,20 +52,25 @@
 }
 
 .card__title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   margin: 0 0 10px 0;
 }
 
 .card__image {
+  justify-self: center;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  width: 80%;
-  margin: 10px;
+  clip-path: inset(0% 0% 0% 0% round 5px);
 }
 
 .card__iconContainer {
   margin-top: 15px;
+  justify-self: flex-end;
+  align-self: flex-end;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -119,21 +122,40 @@
 
 /* Small Tablet Styles */
 @media (min-width: 620px) {
-  /* .container {
-    border: 5px solid red;
-  } */
+  .container {
+    /* border: 5px solid red; */
+  }
+
+  .container__title {
+    align-self: center;
+  }
+
+  .card__title {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    align-self: center;
+  }
 }
 
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
-  /* .container {
-    border: 5px solid green;
-  } */
+  .container {
+    /* border: 5px solid green; */
+  }
+
+  .card__title {
+    font-size: 2.5rem;
+  }
 }
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
-    border: 5px solid blue;
-  } */
+  .container {
+    margin: 0 5vw;
+    /* border: 5px solid blue; */
+  }
+
+  .card__title {
+    font-size: 3rem;
+  }
 }

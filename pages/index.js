@@ -15,20 +15,21 @@ const Home = () => {
           height={287}
           layout="responsive"
           className={styles.image}
+          priority="true"
         />
       </span>
       <ul className={styles.descriptionContainer}>
         <li className={styles.descriptionContainer__description}>
-          Fontend Web Dev,
+          Fontend Web Dev
         </li>
         <li className={styles.descriptionContainer__description}>
-          Computer Science B.S.,
+          Computer Science Graduate
         </li>
         <li className={styles.descriptionContainer__description}>
-          Graphic Designer,
+          Graphic Designer
         </li>
         <li className={styles.descriptionContainer__description}>
-          Lover of Pizza.
+          Lover of Pizza
         </li>
       </ul>
       <span className={styles.button}>

@@ -29,13 +29,18 @@ const Projects = () => {
       <h1 className={styles.container__title}>Things I've Built</h1>
       <section className={styles.card}>
         <h2 className={styles.card__title}>Mega Video Game Quiz</h2>
-        <a href={projects.quiz.liveSite} target="_blank">
+        <a
+          href={projects.quiz.liveSite}
+          className={styles.card__image}
+          target="_blank"
+        >
           <Image
             src="/MVGQ.webp"
             alt="Mega Video Game Quiz"
-            className={styles.card__image}
-            width={3000}
-            height={3000}
+            width={500}
+            height={500}
+            layout="intrinsic"
+            priority="true"
           />
         </a>
         <p className={styles.card__subTitle}>Featured Project</p>
@@ -72,13 +77,18 @@ const Projects = () => {
       </section>
       <section className={styles.card}>
         <h2 className={styles.card__title}>Travelo</h2>
-        <a href={projects.travelo.liveSite} target="_blank">
+        <a
+          href={projects.travelo.liveSite}
+          className={styles.card__image}
+          target="_blank"
+        >
           <Image
             src="/travelo.webp"
             alt="Travelo.com homepage"
-            className={styles.img}
-            width={3840}
-            height={2160}
+            width={500}
+            height={281}
+            layout="intrinsic"
+            priority="true"
           />
         </a>
         <p className={styles.card__subTitle}>Full Stack MERN Web Application</p>
@@ -114,13 +124,17 @@ const Projects = () => {
       </section>
       <section className={styles.card}>
         <h2 className={styles.card__title}>50 Projects in 50 Days</h2>
-        <a href={projects.fiftyProjects.liveSite} target="_blank">
+        <a
+          href={projects.fiftyProjects.liveSite}
+          className={styles.card__image}
+          target="_blank"
+        >
           <Image
             src="/github-finder.webp"
             alt="50 Projects in 50 Days"
-            className={styles.img}
-            width={3840}
-            height={2160}
+            width={500}
+            height={281}
+            layout="intrinsic"
           />
         </a>
         <p className={styles.card__subTitle}>React, JavaScript, HTML, CSS</p>

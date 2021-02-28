@@ -42,6 +42,7 @@ const NavBar = ({ setIsMobileMenuOpen }) => {
           width={70}
           height={70}
           layout="intrinsic"
+          priority="true"
         />
       </Link>
       <FontAwesomeIcon
