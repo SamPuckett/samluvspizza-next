@@ -8,29 +8,31 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   margin: 0 20px;
 }
 
 .title {
-  font-size: 67.5px;
-  line-height: 60px;
+  /* font-size: 2.5em;
+  line-height: 1;
   text-align: left;
-  text-transform: uppercase;
   z-index: 10;
   transition: text-shadow 500ms ease;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
 .title:hover {
-  text-shadow: 5px 5px 0px var(--orange);
+  /* text-shadow: 5px 5px 0px var(--orange); */
 }
 
 .img {
-  margin-top: -40px;
-  margin-bottom: 10px;
+  justify-self: center;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  width: 100%;
+  clip-path: inset(0% 0% 0% 0% round 5px);
 }
 
 .card {
@@ -41,6 +43,7 @@
   background-size: cover;
   border-radius: 5px;
   transition: box-shadow 500ms ease;
+  max-width: 800px;
 }
 
 .card::before {
@@ -61,7 +64,7 @@
 }
 
 .card__title {
-  font-size: 26px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -90,25 +93,37 @@
 
 .button {
   margin: 10px 0;
+  margin-left: auto;
 }
 
 /* Small Tablet Styles */
 @media (min-width: 620px) {
-  /* .container {
-    border: 5px solid red;
-  } */
+  .container {
+    /* border: 5px solid red; */
+  }
+
+  .title {
+    align-self: center;
+  }
+
+  .card__title {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    align-self: center;
+  }
 }
 
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
-  /* .container {
-    border: 5px solid green;
-  } */
+  .container {
+    /* border: 5px solid green; */
+  }
 }
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
-    border: 5px solid blue;
-  } */
+  .container {
+    margin: 0 5vw;
+    /* border: 5px solid blue; */
+  }
 }

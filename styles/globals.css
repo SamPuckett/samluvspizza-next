@@ -1,4 +1,28 @@
-@import url("https://use.typekit.net/hdq5sdv.css");
+/* @import url("https://use.typekit.net/hdq5sdv.css"); */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro-Bold.ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro-Black.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 
 :root {
   /* Colors */
@@ -22,7 +46,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: adelle-sans, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   overflow-x: hidden;
   background: linear-gradient(
     var(--darkest-purple),
@@ -58,15 +82,27 @@ h6 {
 }
 
 h1 {
-  font-family: sofia-pro-condensed, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 2.5em;
+  line-height: 1;
+  text-align: left;
+  z-index: 10;
+  transition: text-shadow 500ms ease;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-family: sofia-pro-condensed, sans-serif;
-  font-weight: 700;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600;
   font-style: normal;
+  font-size: 2.5em;
+  line-height: 1;
+  text-align: left;
+  z-index: 10;
+  transition: text-shadow 500ms ease;
+  margin-bottom: 20px;
 }
 
 a {
@@ -76,10 +112,10 @@ a {
 
 button {
   font-size: var(--button-font-size);
-  font-weight: 700;
+  font-weight: bold;
   color: var(--white);
   border-radius: 8px;
-  font-family: adelle-sans, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   background: linear-gradient(
     var(--orange),
     var(--dark-orange),
@@ -97,7 +133,7 @@ button {
   align-items: center;
   transition: transform 100ms ease, box-shadow 100ms ease, background 500ms ease,
     color 250ms ease;
-  z-index: 10;
+  z-index: 100;
 }
 
 button:hover {

@@ -7,14 +7,17 @@ const about = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>About Me</h1>
-      <Image
-        src="/HackMerced-cropped1.webp"
-        alt="Me at Google"
-        className={styles.img}
-        width={554}
-        height={554}
-        layout="responsive"
-      />
+      <span className={styles.img}>
+        <Image
+          src="/HackMerced-cropped1.webp"
+          alt="Me at Google"
+          className={styles.image}
+          width={554}
+          height={554}
+          layout="responsive"
+          priority="true"
+        />
+      </span>
       <p className={styles.text}>
         Hello! I’m Sam, a Front-End Developer based in Modesto, California who
         enjoys designing things on the web. I am passionate about web
@@ -29,9 +32,11 @@ const about = () => {
         JavaScript, React and a variety of modern web technologies on a daily
         basis.
       </p>
-      <Button type="arrow" href="/work" className={styles.button}>
-        Work Experience
-      </Button>
+      <span className={styles.button}>
+        <Button type="arrow" href="/work" className={styles.button}>
+          Work Experience
+        </Button>
+      </span>
     </div>
   );
 };

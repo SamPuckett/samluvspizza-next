@@ -13,16 +13,6 @@
 }
 
 .title {
-  font-family: sofia-pro-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 67.5px;
-  line-height: 60px;
-  text-align: left;
-  text-transform: uppercase;
-  z-index: 10;
-  transition: text-shadow 500ms ease;
-  margin-bottom: 20px;
 }
 
 .title:hover {
@@ -30,11 +20,13 @@
 }
 
 .img {
-  margin-top: -30px;
-  margin-bottom: 10px;
-  align-self: center;
   width: 100%;
+  height: 100%;
   border-radius: 5px;
+  clip-path: inset(0% 0% 0% 0% round 5px);
+}
+
+.image:hover {
 }
 
 .descriptionContainer {
@@ -44,37 +36,94 @@
 }
 
 .descriptionContainer__description {
-  font-family: sofia-pro-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600;
   list-style: none;
   text-align: right;
-  font-size: 24px;
+  font-size: 1.25em;
   line-height: 1.5;
 }
 
 .button {
   margin: 10px 0;
-  border: 1px solid green;
+  z-index: 100;
+  margin-left: auto;
 }
 
 /* Small Tablet Styles */
 @media (min-width: 620px) {
-  /* .container {
-    border: 5px solid red;
-  } */
+  .container {
+    /* border: 5px solid red; */
+    padding: 0 65px;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .title {
+    grid-area: 2 / 1 / 3 / 8;
+    align-self: center;
+    justify-self: start;
+    font-size: 3em;
+  }
+
+  .descriptionContainer {
+    grid-area: 3 / 1 / 8 / 8;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .descriptionContainer__description {
+    font-size: 3vw;
+    justify-self: center !important;
+    align-self: flex-start;
+  }
+
+  .img {
+    grid-area: 3 / 7 / 8 / 11;
+    /* display: grid; */
+  }
+
+  .image {
+    /* clip-path: inset(0% 0% 0% 0% round 5%); */
+  }
+
+  .button {
+    grid-area: 8 / 1 / 9 / 6;
+    margin-left: 0;
+  }
 }
 
 /* Large Tablets & Laptop Styles */
 @media (min-width: 960px) {
-  /* .container {
-    border: 5px solid green;
-  } */
+  .container {
+    /* border: 5px solid green; */
+  }
+
+  .descriptionContainer__description {
+    line-height: 1.25;
+  }
 }
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
-    border: 5px solid blue;
-  } */
+  .container {
+    margin: 0 5vw;
+    /* border: 5px solid blue; */
+  }
+
+  .title {
+    font-size: 3vw;
+  }
+
+  .descriptionContainer__description {
+    line-height: 1.125;
+    font-size: 3vw;
+  }
 }

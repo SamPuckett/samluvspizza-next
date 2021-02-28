@@ -8,23 +8,23 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0 20px;
-  height: 80vh;
+  margin: 0 5vw;
   min-height: 80vh;
+  align-items: center;
 }
 
 .container__title {
-  font-size: 67.5px;
+  /* font-size: 67.5px;
   line-height: 60px;
   text-align: left;
   text-transform: uppercase;
   z-index: 10;
   transition: text-shadow 500ms ease;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
 .container__title:hover {
-  text-shadow: 5px 5px 0px var(--orange);
+  /* text-shadow: 5px 5px 0px var(--orange); */
 }
 
 .card {
@@ -36,6 +36,7 @@
   padding: 20px;
   margin: 10px 0;
   transition: box-shadow 500ms ease;
+  max-width: 800px;
 }
 
 .card::before {
@@ -89,7 +90,8 @@
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
-  /* .container {
-    border: 5px solid blue;
-  } */
+  .container {
+    margin: 0 5vw;
+    /* border: 5px solid blue; */
+  }
 }
