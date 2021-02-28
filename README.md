@@ -1,6 +1,9 @@
 # samluvspizza-next
  Refactoring My Portfolio Site to make use of Next.js
  
+### v1.04.3: Fix Font Issues
+- Change the fonts that are used to more readable and accessibility friendly fonts 
+ 
 ### v1.04.2: Improve SEO By including <meta> element in <Head>
 - Next.js offers a way to implement and inject a <head> element in the compiled HTML by using their own <Head> component imported from 'next/head'.
 - I used this component to inject a new <meta> element with the description of the webpage in the <Layout> component so that all of the pages that are compiled by Next will have that <meta> element.
