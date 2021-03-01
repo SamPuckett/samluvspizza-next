@@ -4,9 +4,80 @@ import {
   faCodeBranch,
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 import Button from "../components/Button";
 import styles from "../styles/Projects.module.css";
+
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInRight = {
+  initial: {
+    x: 60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInLeft = {
+  initial: {
+    x: -60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInDown = {
+  initial: {
+    y: -60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Projects = () => {
   const projects = {
@@ -25,9 +96,25 @@ const Projects = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.container__title}>Things I've Built</h1>
-      <section className={styles.card}>
+    <motion.div
+      className={styles.container}
+      variants={stagger}
+      exit={{ opacity: 0 }}
+      initial="initial"
+      animate="animate"
+    >
+      <motion.h1
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInDown}
+        className={styles.container__title}
+      >
+        Things I've Built
+      </motion.h1>
+      <motion.section
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInLeft}
+        className={styles.card}
+      >
         <h2 className={styles.card__title}>Mega Video Game Quiz</h2>
         <a
           href={projects.quiz.liveSite}
@@ -74,8 +161,12 @@ const Projects = () => {
             />
           </a>
         </div>
-      </section>
-      <section className={styles.card}>
+      </motion.section>
+      <motion.section
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInRight}
+        className={styles.card}
+      >
         <h2 className={styles.card__title}>Travelo</h2>
         <a
           href={projects.travelo.liveSite}
@@ -121,8 +212,12 @@ const Projects = () => {
             />
           </a>
         </div>
-      </section>
-      <section className={styles.card}>
+      </motion.section>
+      <motion.section
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInLeft}
+        className={styles.card}
+      >
         <h2 className={styles.card__title}>50 Projects in 50 Days</h2>
         <a
           href={projects.fiftyProjects.liveSite}
@@ -167,11 +262,11 @@ const Projects = () => {
             />
           </a>
         </div>
-      </section>
+      </motion.section>
       <Button type="arrow" href="/contact" className={styles.button}>
         What's Next
       </Button>
-    </div>
+    </motion.div>
   );
 };
 

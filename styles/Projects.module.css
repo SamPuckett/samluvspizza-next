@@ -13,8 +13,8 @@
 }
 
 .container__title {
-  justify-self: flex-start;
-  align-self: start;
+  /* justify-self: flex-start;
+  align-self: start; */
 }
 
 .container__title:hover {
@@ -32,19 +32,7 @@
   margin: 10px 0;
   transition: box-shadow 500ms ease;
   max-width: 800px;
-}
-
-.card::before {
-  content: "";
-  background-image: url("/texture.webp");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.25;
-  z-index: -1;
+  z-index: 10;
 }
 
 .card:hover {
@@ -87,6 +75,7 @@
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-content: center;
+  z-index: 100;
 }
 
 .card__iconContainer__a__icon {
