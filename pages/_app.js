@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 import Layout from "../components/Layout";
 import { MobileMenu } from "../components/MobileMenu";
@@ -18,11 +19,13 @@ function MyApp({ Component, pageProps }) {
           setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
       )}
-      <Component
-        {...pageProps}
-        isMobileMenuOpen={isMobileMenuOpen}
-        setIsMobileMenuOpen={setIsMobileMenuOpen}
-      />
+      <AnimatePresence exitBeforeEnter>
+        <Component
+          {...pageProps}
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+        />
+      </AnimatePresence>
     </Layout>
   );
 }

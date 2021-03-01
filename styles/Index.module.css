@@ -13,10 +13,10 @@
 }
 
 .title {
+  text-align: center;
 }
 
 .title:hover {
-  text-shadow: 5px 5px 0px var(--orange);
 }
 
 .img {

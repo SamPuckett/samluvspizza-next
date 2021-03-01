@@ -1,23 +1,100 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import Button from "../components/Button";
 import styles from "../styles/Work.module.css";
 
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInRight = {
+  initial: {
+    x: 60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInLeft = {
+  initial: {
+    x: -60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const fadeInDown = {
+  initial: {
+    y: -60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const Work = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Work Experience</h1>
-      {/* <span className={styles.img}>
-        <Image
-          src="/Novo.webp"
-          alt="Me at Novo Technologies giving a presenation."
-          width={500}
-          height={500}
-          layout="intrinsic"
-          priority="true"
-        />
-      </span> */}
-      <section className={styles.card}>
+    <motion.div
+      variants={stagger}
+      exit={{ opacity: 0 }}
+      initial="initial"
+      animate="animate"
+      className={styles.container}
+    >
+      <motion.h1
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInDown}
+        className={styles.title}
+      >
+        Work Experience
+      </motion.h1>
+      <motion.section
+        className={styles.card}
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInLeft}
+      >
         <h2 className={styles.card__title}>
           Front-End React Developer & UI/UX Intern{" "}
           <span className="orange">@ Novo Technologies</span>
@@ -34,8 +111,12 @@ const Work = () => {
             flowcharts, personas, tasks, and sprint backlogs for scrum sprints.
           </li>
         </ul>
-      </section>
-      <section className={styles.card}>
+      </motion.section>
+      <motion.section
+        className={styles.card}
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInRight}
+      >
         <h2 className={styles.card__title}>
           Google Developer Group Organizer & Mentor
           <span className="orange">
@@ -55,8 +136,12 @@ const Work = () => {
             organizing team building events.
           </li>
         </ul>
-      </section>
-      <section className={styles.card}>
+      </motion.section>
+      <motion.section
+        className={styles.card}
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInLeft}
+      >
         <h2 className={styles.card__title}>
           Undergrad Chatbot Research
           <span className="orange">
@@ -82,11 +167,11 @@ const Work = () => {
             those questions.
           </li>
         </ul>
-      </section>
+      </motion.section>
       <Button type="arrow" href="/projects" className={styles.button}>
         Things I've Built
       </Button>
-    </div>
+    </motion.div>
   );
 };
 

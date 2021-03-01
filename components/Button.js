@@ -5,7 +5,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const Button = ({ children, href, onClick, type }) => {
   return (
     <Link href={href}>
-      <button onClick={onClick && onClick}>
+      <button onClick={onClick && onClick} style={{ cursor: "pointer" }}>
         {children}
         {type === "arrow" && (
           <FontAwesomeIcon icon={faChevronRight} className="chevron-right" />
