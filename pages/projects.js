@@ -235,7 +235,7 @@ const Projects = () => {
         <p className={styles.card__subTitle}>React, JavaScript, HTML, CSS</p>
         <ul className={styles.card__descriptionContainer}>
           <li className={styles.card__descriptionContainer__description}>
-            I created 50 React projects in 50 days. I worked on this in order to
+            I'm currently working on their project where I create 50 React projects in 50 days. I'm working on this in order to
             create many different components that I might need in the future
             when creating things for front-end purposes.
           </li>
