@@ -89,9 +89,9 @@ const Projects = () => {
       liveSite: "https://react-mern-299603.web.app/",
       repo: "https://github.com/SamPuckett/Travelo-FrontEnd",
     },
-    fiftyProjects: {
-      liveSite: "https://50reactprojects50days.netlify.app/",
-      repo: "https://github.com/SamPuckett/50Projects50Days",
+    wildfireTracker: {
+      liveSite: "https://wildfiretracker.netlify.app/",
+      repo: "https://github.com/SamPuckett/Wildfire-Tracker",
     },
   };
 
@@ -188,6 +188,7 @@ const Projects = () => {
             I made a full stack MERN social media platform where users share
             places that they recommend to travel to. I learned how to use Heroku
             to host a backend & Firebase to host the frontend of the project.
+            This projcet utilizes React, MongoDB, Node.js and Express.js.
           </li>
         </ul>
         <div className={styles.card__iconContainer}>
@@ -218,15 +219,15 @@ const Projects = () => {
         variants={fadeInLeft}
         className={styles.card}
       >
-        <h2 className={styles.card__title}>50 Projects in 50 Days</h2>
+        <h2 className={styles.card__title}>Wildfire Tracker</h2>
         <a
-          href={projects.fiftyProjects.liveSite}
+          href={projects.wildfireTracker.liveSite}
           className={styles.card__image}
           target="_blank"
         >
           <Image
-            src="/github-finder.webp"
-            alt="50 Projects in 50 Days"
+            src="/wildfireTracker.webp"
+            alt="Wildfire Tracker"
             width={500}
             height={281}
             layout="intrinsic"
@@ -235,14 +236,15 @@ const Projects = () => {
         <p className={styles.card__subTitle}>React, JavaScript, HTML, CSS</p>
         <ul className={styles.card__descriptionContainer}>
           <li className={styles.card__descriptionContainer__description}>
-            I'm currently working on their project where I create 50 React projects in 50 days. I'm working on this in order to
-            create many different components that I might need in the future
-            when creating things for front-end purposes.
+            Wildfire Tracker website that is powered by NASA's EONET Public API
+            which provides us with the wildfire data. Plots the wildfires on a
+            google map and provides info about the specific wildfire whenever
+            clicked on.
           </li>
         </ul>
         <div className={styles.card__iconContainer}>
           <a
-            href={projects.fiftyProjects.repo}
+            href={projects.wildfireTracker.repo}
             className={styles.card__iconContainer__a}
             target="_blank"
           >
@@ -252,7 +254,7 @@ const Projects = () => {
             />
           </a>
           <a
-            href={projects.fiftyProjects.liveSite}
+            href={projects.wildfireTracker.liveSite}
             className={styles.card__iconContainer__a}
             target="_blank"
           >
