@@ -115,7 +115,7 @@ const Home = () => {
         className={styles.descriptionContainer}
       >
         <li className={styles.descriptionContainer__description}>
-          Fontend Web Dev
+          Frontend Web Dev
         </li>
         <li className={styles.descriptionContainer__description}>
           Computer Science Graduate
