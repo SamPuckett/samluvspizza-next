@@ -106,7 +106,7 @@ const contact = () => {
       >
         <h2 className={styles.card__title}>Contact Me!</h2>
         <p className={styles.card__text}>
-          I’m currently looking for new Developer opportunities, my inbox is
+          I’m currently NOT looking for new Developer opportunities, but my inbox is
           always open. Whether you have a question or just want to say hi, I’ll
           try my best to get back to you!
         </p>
