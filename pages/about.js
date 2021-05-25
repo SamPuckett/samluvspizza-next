@@ -115,14 +115,13 @@ const about = () => {
         development and creating products that users can easily use without
         having to think.
         <br />
-        <br />I am a newly graduated Computer Science student from California
+        <br />I am a software Engineer for Oracle in Redwood City. I recently just graduated as Computer Science student from California
         State University, Stanislaus. During the course of my academic career, I
         had the privilege of working for Novo Technologies in a React Developer
         & UI/UX Internship position in my free time, where I learned valuable
         professional skills Whether working on academic, extracurricular, or
         professional projects, I apply proven creative thinking, communication,
-        and teamwork skills, which I hope to leverage towards a React Developer
-        position.
+        and teamwork skills.
       </motion.p>
       <motion.span
         whileHover={{ scale: 1.05 }}
