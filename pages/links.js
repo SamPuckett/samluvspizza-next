@@ -108,6 +108,17 @@ const links = () => {
           <h2 className={styles.card__title}>August Spotify Playlist</h2>
         </motion.section>
       </Link>
+
+<Link href="https://music.apple.com/us/playlist/august-2021/pl.u-NpXmzl3ImkeG9m3">
+        <motion.section
+          whileHover={{ scale: 1.05 }}
+          variants={fadeInLeft}
+          className={styles.card}
+        >
+          <h2 className={styles.card__title}>August Apple Music Playlist</h2>
+        </motion.section>
+      </Link>
+
     </motion.div>
   );
 };
