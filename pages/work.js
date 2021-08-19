@@ -99,7 +99,7 @@ const Work = () => {
           Front-End React Developer & UI/UX Intern{" "}
           <span className="orange">@ Novo Technologies</span>
         </h2>
-        <p className={styles.card__date}>November 2019 - April, 2020</p>
+        <p className={styles.card__date}>November 2019 - March, 2021</p>
         <ul className={styles.card__descriptionContainer}>
           <li className={styles.card__descriptionContainer__description}>
             Improving scalability of a production application tremendously by
