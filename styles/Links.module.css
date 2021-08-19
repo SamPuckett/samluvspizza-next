@@ -1,0 +1,87 @@
+/* Variables */
+
+/* Base Styles */
+
+/* Fonts */
+
+/* Mobile Styles */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 5vw;
+  min-height: 80vh;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container__title {
+  /* font-size: 67.5px;
+  line-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 10;
+  transition: text-shadow 500ms ease;
+  margin-bottom: 20px; */
+}
+
+.container__title:hover {
+  /* text-shadow: 5px 5px 0px var(--orange); */
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--black);
+  background-size: cover;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  transition: box-shadow 500ms ease;
+  max-width: 800px;
+  z-index: 10;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px var(--black);
+  color: #1db954;
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.card__text {
+  margin: 10px 0;
+  font-size: var(--body-font-size);
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.card__button {
+  margin: 10px 20px 0 20px;
+  align-self: center;
+}
+
+/* Small Tablet Styles */
+@media (min-width: 620px) {
+  /* .container {
+    border: 5px solid red;
+  } */
+}
+
+/* Large Tablets & Laptop Styles */
+@media (min-width: 960px) {
+  /* .container {
+    border: 5px solid green;
+  } */
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 5vw;
+    /* border: 5px solid blue; */
+  }
+}
