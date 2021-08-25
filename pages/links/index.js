@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import styles from "../styles/Links.module.css";
+import styles from "../../styles/Links.module.css";
 
 // animage: defines the final state of the animation.
 // initial: defines the initial state of animation.
@@ -77,10 +77,20 @@ const stagger = {
   },
 };
 
-const links = () => {
-  const contactButtonHandler = () => {
-    console.log("button was clicked!");
-    window.open("mailto:samuelruizdev@gmail.com");
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://api.sheety.co/a938a9b6a148faa2a48b79ae4aec7f94/samLuvsPizzaLinks/sheet1`
+  );
+  const data = await res.json();
+
+  return {
+    props: { links: data },
+  };
+};
+
+const links = ({ links }) => {
+  const sectionClickHandler = () => {
+    // console.log(`link was clicked`);
   };
 
   return (
@@ -99,26 +109,27 @@ const links = () => {
       >
         Links
       </motion.h1>
-      <Link href="https://open.spotify.com/playlist/00tiCc3YHe8IbcOmvK74ti?si=db3ca671e0af4447">
+      <Link href={links.sheet1[0].linkUrl}>
         <motion.section
           whileHover={{ scale: 1.05 }}
           variants={fadeInLeft}
           className={styles.card}
+          onClick={sectionClickHandler}
         >
-          <h2 className={styles.card__title}>August Spotify Playlist</h2>
+          <h2 className={styles.card__title}>{links.sheet1[0].linkTitle}</h2>
         </motion.section>
       </Link>
 
-<Link href="https://music.apple.com/us/playlist/august-2021/pl.u-NpXmzl3ImkeG9m3">
+      <Link href={links.sheet1[1].linkUrl}>
         <motion.section
           whileHover={{ scale: 1.05 }}
           variants={fadeInLeft}
           className={styles.card}
+          onClick={sectionClickHandler}
         >
-          <h2 className={styles.card__title}>August Apple Music Playlist</h2>
+          <h2 className={styles.card__title}>{links.sheet1[1].linkTitle}</h2>
         </motion.section>
       </Link>
-
     </motion.div>
   );
 };
