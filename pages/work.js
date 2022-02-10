@@ -96,6 +96,26 @@ const Work = () => {
         variants={fadeInLeft}
       >
         <h2 className={styles.card__title}>
+          Fullstack Software Engineer <span className="orange">@ Oracle</span>
+        </h2>
+        <p className={styles.card__date}>July 2021 - Present</p>
+        <ul className={styles.card__descriptionContainer}>
+          <li className={styles.card__descriptionContainer__description}>
+            Working with various front-end frameworks in order to deliver
+            beatiful experiences to my team.
+          </li>
+          <li className={styles.card__descriptionContainer__description}>
+            Developing API endpoints for the various front-end projects that I'm
+            working on.
+          </li>
+        </ul>
+      </motion.section>
+      <motion.section
+        className={styles.card}
+        whileHover={{ scale: 1.05 }}
+        variants={fadeInLeft}
+      >
+        <h2 className={styles.card__title}>
           Front-End React Developer & UI/UX Intern{" "}
           <span className="orange">@ Novo Technologies</span>
         </h2>

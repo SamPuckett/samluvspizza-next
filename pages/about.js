@@ -110,15 +110,16 @@ const about = () => {
         variants={fadeInLeft}
         className={styles.text}
       >
-        Hello! I’m Sam, a Front-End Developer based in Modesto, California who
+        Hello! I’m Sam, a Front-End Developer based in Bay Area, California who
         enjoys creating & designing tools on the web. I am passionate about web
         development and creating products that users can easily use without
         having to think.
         <br />
-        <br />I am a software Engineer for Oracle in Redwood City. I recently just graduated as Computer Science student from California
-        State University, Stanislaus. During the course of my academic career, I
-        had the privilege of working for Novo Technologies in a React Developer
-        & UI/UX Internship position in my free time, where I learned valuable
+        <br />I am a software Engineer for Oracle in Redwood City. I recently
+        just graduated as Computer Science student from California State
+        University, Stanislaus. During the course of my academic career, I had
+        the privilege of working for Novo Technologies in a React Developer &
+        UI/UX Internship position in my free time, where I learned valuable
         professional skills Whether working on academic, extracurricular, or
         professional projects, I apply proven creative thinking, communication,
         and teamwork skills.
